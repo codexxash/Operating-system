@@ -124,7 +124,7 @@ img {
     color: #ffffff;
     outline: none;
     position: relative;
-    background-image: url("icons8-search-50.png");
+    background-image: url("/assets/img/icons8-search-50.png");
     background-repeat: no-repeat;
     background-position: 10px center;
     height: 1px;
@@ -184,12 +184,12 @@ input::placeholder {
 .folder {
     width: 75px;
     height: 85px;
-    background-image: url(folder\ icon.png);
+    background-image: url(/assets/img/folder\ icon.png);
     background-repeat: no-repeat;
     background-position: 8px;
     background-size: 55px;
     margin: 10px;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     display: flex;
     flex-direction: column;
     align-items: center;
