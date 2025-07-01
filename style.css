@@ -33,7 +33,7 @@ body {
 }
 
 .menuBar {
-    height: 40vh;
+    height: 380px;
     width: 19vw;
     background: rgba(59, 50, 50, 0.518);
     backdrop-filter: blur(10px);
@@ -176,6 +176,7 @@ input::placeholder {
     flex-direction: row;
     flex-wrap: wrap;
     /* background: #000; */
+    /* border: 1px solid gray; */
 
 }
 
@@ -187,22 +188,23 @@ input::placeholder {
     background-repeat: no-repeat;
     background-position: 8px;
     background-size: 55px;
-    /* text-align: end; */
     margin: 10px;
-    /* border: 1px solid gray; */
+    border: 1px solid gray;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    padding-bottom: 5px;
+    /* position: relative; */
+
 
 }
+
 
 .folderName {
     outline: none;
     border: none;
     padding-left: 0.2rem;
-    width: 75px;
+    width: 85px;
     font-size: 0.75rem;
     text-align: center;
     position: relative;
