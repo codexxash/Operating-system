@@ -21,8 +21,25 @@ body {
     background: #3f6470;
     position: relative;
 }
+#desktop::before{
+    content: '';
+    position: absolute;
+    bottom: -48%;
+    right: 1%;
+    height: 430px;
+    width: 400px;
+    background: #0000007c;
+    border-radius: 8px;
+    border: 1px solid #ffffff55;
+    /* z-index: 1; */
+    transition: bottom .2s ease;
+}
 
-#desktop .dragbox {
+#desktop.hover-effect::before{
+    bottom: 8%;
+}
+
+/* #desktop .dragbox {
     height: 100px;
     width: 100px;
     background: tomato;
@@ -30,7 +47,7 @@ body {
     top: 100px;
     left: 100px;
     border-radius: 8px;
-}
+} */
 
 .menuBar {
     height: 380px;
@@ -83,32 +100,42 @@ hr {
 
 footer {
     position: absolute;
-    bottom: 0;
+    bottom: 0;   
+    /* margin-top: 53%; */
     height: 55px;
     width: 100%;
     background: rgb(37, 37, 37);
     color: #ffffff;
+    /* z-index: 9999; */
 }
+
+
 
 #footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    
 }
 
+
+
 .image-bar {
-    height: 55px;
+    height: 53px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
-    padding-top: .7rem;
+    gap: 12px;
+    padding: .3rem;
 }
 
 img {
-    height: 33px;
-    border-radius: 10px;
+    height: 100%;
+    border-radius: 7px;
+    padding: .3rem .2rem;
+
+
 }
 
 .image-bar img:hover {
@@ -136,9 +163,10 @@ img {
 }
 
 input::placeholder {
-    color: #ffffff;
+    color: #ffffffbb;
     padding-left: 1rem;
     font-size: 1rem;
+    
 }
 
 .icon-bar {
@@ -149,21 +177,59 @@ input::placeholder {
     align-items: center;
     font-size: 1.1rem;
     font-weight: 100;
-    gap: 20px;
+    gap: 5px;
+    cursor: default;
+    /* background: #000; */
+
+}
+
+/* Creating icon menu here */
+
+
+
+
+.icon-bar-span1 {
+    padding: .7rem .4rem;
+    border-radius: 7px;
+
+
+    &:hover{
+
+        background: #6867672c;
+    }
+
 }
 
 
 .icon-bar-span2 {
     display: flex;
     gap: 10px;
+    padding: .7rem .4rem;
+    border-radius: 7px;
+    position: relative;
+
+    &:hover {
+        background: #6867672c;
+    }
 
 
 }
+
+
+
+
+
+
 
 .icon-bar-span3 {
     font-weight: 100;
     text-align: end;
     font-size: .9rem;
+     padding: .7rem .4rem;
+    border-radius: 7px;
+     &:hover {
+        background: #6867672c;
+    }
 }
 
 

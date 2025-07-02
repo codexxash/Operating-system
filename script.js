@@ -4,6 +4,7 @@ const box = document.querySelector('.dragbox')
 const view = document.getElementById('desktop')
 const menuBar = document.querySelector('.menuBar')
 const newFolder = document.querySelector('.new')
+const wifiMenu = document.querySelector('.icon-bar-span2')
 
 const body = document.body
 let offsetX = 0
@@ -42,6 +43,9 @@ view.addEventListener("contextmenu", (e) => {
 
 view.addEventListener('click', () => {
     menuBar.style.display = "none"
+    // wifiMenu.classList.remove('hover-effect')
+
+    
 
 })
 
@@ -181,3 +185,18 @@ function enableRename(nameLabel) {
     }
 
 }
+
+
+
+// creating WiFi Menubar...............
+
+
+wifiMenu.addEventListener('click', () =>{
+
+    view.classList.toggle('hover-effect')
+
+})
+
+// wifiMenu.addEventListener('click', () =>{
+//     view.classList.remove('hover-effect')
+// })
