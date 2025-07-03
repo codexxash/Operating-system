@@ -22,7 +22,7 @@ body {
     position: relative;
 }
 #desktop::before{
-    content: '';
+    content: "";
     position: absolute;
     bottom: -48%;
     right: 1%;
@@ -31,13 +31,85 @@ body {
     background: #0000007c;
     border-radius: 8px;
     border: 1px solid #ffffff55;
-    /* z-index: 1; */
     transition: bottom .2s ease;
 }
 
 #desktop.hover-effect::before{
     bottom: 8%;
 }
+
+#wifiMenu{
+    position: absolute;
+    bottom: -48%;
+    right: 1%;
+    height: 430px;
+    width: 400px;
+    gap: 10px;
+    z-index: 2;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    /* background: #0000007c; */
+    transition: bottom .2s ease;
+}
+
+.clickable-tool {
+    width: 100%;
+    height: 70%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 1.2rem;
+   font-family: sans-serif;
+   font-weight: 100;
+
+}
+
+.clickable-tool .tool-1 {
+    height: 100%;
+  
+}
+.clickable-tool .tool-2 {
+    height: 100%;
+  
+}
+
+.clickable-tool .tool-1 i, .tool-2 i{
+    border: 1px solid #ffffff4f  ;
+    /* margin-bottom: 0; */
+    padding: 1rem 1rem 2rem 1rem;
+    
+
+
+}
+
+.dragable-tool{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;  
+}
+
+.dragable-tool input{
+    width: 70%;
+    height: 5px;
+}
+
+.footer-tool{
+    /* width: 100%; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+    padding: 1rem;
+    background: #292828;
+    border-radius: 0 0 8px 8px ;
+    /* z-index: -2; */
+}
+
+
 
 /* #desktop .dragbox {
     height: 100px;

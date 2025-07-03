@@ -5,6 +5,7 @@ const view = document.getElementById('desktop')
 const menuBar = document.querySelector('.menuBar')
 const newFolder = document.querySelector('.new')
 const wifiMenu = document.querySelector('.icon-bar-span2')
+const menuContent = document.getElementById('wifiMenu')
 
 const body = document.body
 let offsetX = 0
