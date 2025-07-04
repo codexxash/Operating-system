@@ -192,12 +192,21 @@ function enableRename(nameLabel) {
 // creating WiFi Menubar...............
 
 
+
 wifiMenu.addEventListener('click', () =>{
 
     view.classList.toggle('hover-effect')
+    menuContent.classList.toggle('wifiMenu')
 
 })
 
 // wifiMenu.addEventListener('click', () =>{
 //     view.classList.remove('hover-effect')
 // })
+
+const OnOffIcon = document.querySelector('.on-off')
+
+
+OnOffIcon.addEventListener('click', () =>{
+    OnOffIcon.style.backgroundColor = 'blue'
+})
